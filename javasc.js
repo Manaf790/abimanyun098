@@ -91,8 +91,18 @@
 
 
 
+// let rows = 5;
+// while (rows >= 1) {
+//     console.log("*".repeat(rows));
+//     rows--;
+// }
+
+
+
 let rows = 5;
-while (rows >= 1) {
-    console.log("*".repeat(rows));
-    rows--;
-}
+let i = 1;
+do {
+    console.log(" ".repeat(rows - i) + "*".repeat(i));
+    i++;
+}  while (i <= rows);  
+

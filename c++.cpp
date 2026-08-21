@@ -144,17 +144,42 @@ using namespace std;
 
 
 
+// int main() {
+//     int rows = 5;
+
+//     while (rows >= 1) {
+//         for (int i = 1; i <= rows; i++) {
+//             cout << "*";
+//         }
+//         cout << endl;
+//         rows--;
+//     }
+ 
+//  return 0;
+// }
+
+
+
 int main() {
     int rows = 5;
+    int i = 1;
 
-    while (rows >= 1) {
-        for (int i = 1; i <= rows; i++) {
+    do {
+        
+        for (int j = 1; j <= rows - i; j++) {
+            cout << " ";
+        }
+
+       
+        for (int j = 1; j <= i; j++) {
             cout << "*";
         }
+
         cout << endl;
-        rows--;
-    }
- 
- return 0;
+        i++;
+
+    } while (i <= rows);
+
+    return 0;
 }
 
