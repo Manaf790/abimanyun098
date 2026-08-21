@@ -62,22 +62,29 @@
 
 
 
-let nilai = 88;
+// let nilai = 88;
 
-switch(true){
-case (nilai >= 90): {
-    console.log("Nilai Anda A.");
-    break;
-}
-case (nilai >= 80): {
-    console.log("Nilai Anda B.");
-    break;
-}
-case (nilai >= 70): {
-    console.log("Nilai Anda C.");
-    break;
-}
-default: {
-    console.log("Nilai Anda D.");
-}
+// switch(true){
+// case (nilai >= 90): {
+//     console.log("Nilai Anda A.");
+//     break;
+// }
+// case (nilai >= 80): {
+//     console.log("Nilai Anda B.");
+//     break;
+// }
+// case (nilai >= 70): {
+//     console.log("Nilai Anda C.");
+//     break;
+// }
+// default: {
+//     console.log("Nilai Anda D.");
+// }
+// }
+
+
+
+const rows = 5;
+for (let i = 1; i <= rows; i++) {
+	console.log(" ".repeat(rows - i) + "*".repeat(2 * i - 1));
 }

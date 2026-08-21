@@ -58,14 +58,20 @@
 
 
 
-nilai = 88
+#nilai = 88
 
-match True:
-    case _ if nilai >= 90:
-        print("Nilai Anda A.")
-    case _ if nilai >= 80:
-        print("Nilai Anda B.")
-    case _ if nilai >= 70:
-        print("Nilai Anda C.")
-    case _:
-        print("Nilai Anda D.")
+#match True:
+#    case _ if nilai >= 90:
+#        print("Nilai Anda A.")
+#    case _ if nilai >= 80:
+#        print("Nilai Anda B.")
+#    case _ if nilai >= 70:
+#        print("Nilai Anda C.")
+#   case _:
+#        print("Nilai Anda D.")    
+
+
+
+rows = 5
+for i in range(1, rows + 1):
+  print(" " * (rows -i) + "*" * (2 * i - 1))

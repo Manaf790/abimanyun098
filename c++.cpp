@@ -1,6 +1,6 @@
-// #include <iostream>
-// #include <iomanip>
-// using namespace std;
+#include <iostream>
+#include <iomanip>
+using namespace std;
 
 // int main() {
 //     int jumlah_buku = 3;
@@ -97,29 +97,47 @@
 
 
 
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
+
+// int main() {
+//     int nilai = 90;
+
+//     switch (nilai / 10) {
+//         case 10:
+//         case 9:
+//             cout << "Nilai Anda A." << endl;
+//             break;
+
+//         case 8:
+//             cout << "Nilai Anda B." << endl;
+//             break;
+
+//         case 7:
+//             cout << "Nilai Anda C." << endl;
+//             break;
+
+//         default:
+//             cout << "Nilai Anda D." << endl;
+//     }
+
+//     return 0;
+// }
+
+
 
 int main() {
-    int nilai = 90;
+     int rows = 5;
 
-    switch (nilai / 10) {
-        case 10:
-        case 9:
-            cout << "Nilai Anda A." << endl;
-            break;
+	for (int i = 1; i <= rows; ++i) {
+		for(int j = 1; j <= rows - i; j++) {
+            cout << " ";
+        }
+        for(int k = 1; k <= 2 * i - 1; k++) {
+            cout << "*";
+        }
+        cout << endl;
+	}
 
-        case 8:
-            cout << "Nilai Anda B." << endl;
-            break;
-
-        case 7:
-            cout << "Nilai Anda C." << endl;
-            break;
-
-        default:
-            cout << "Nilai Anda D." << endl;
-    }
-
-    return 0;
+	return 0;
 }
